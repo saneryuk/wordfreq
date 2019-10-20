@@ -1,0 +1,8 @@
+One of the key selling points of Pixel 4 is the fact that it has the much faster “new” Google Assistant on board. However, there are a couple of details that might ruin that for some users. The new Google Assistant requires that you use gesture navigation, and that you don’t have any G Suite accounts on your device.
+
+Android Police uncovered a support document with a list of requirements for the new Google Assistant on the Pixel 4. It explains what version of the Google app you’ll need, the fact that it will only work in English in the United States, and also notes that gesture navigation is required too.
+
+That last point was a bit of a shocker considering the Pixel 4 also supports three-button navigation, and it was unclear if it was a permanent change. Google later reached out, saying that this actually wasn’t the case, and that users could still activate the new Google Assistant with three-button navigation, but it quickly walked back that statement. Even if you trigger Assistant using Active Edge, you’ll need gestures enabled.
+
+A slightly more annoying part of the “new” Google Assistant’s requirements on Pixel 4 is that you can’t have a G Suite account on the device at all. Not only can that account not be the “primary” one, but it can’t be signed in on the device at all. For those who have accounts through work or school that need access to their emails on the go, this is going to be a very annoying requirement.
+
