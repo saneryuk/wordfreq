@@ -1,9 +1,11 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include<unistd.h>
+#include <string.h>
+#include "datastruct.h"
+//#include<unistd.h>
 
 int main(int argc, char *argv[])
 {
@@ -15,11 +17,14 @@ int main(int argc, char *argv[])
         while(read(openfile, buf, 1)>0)
         {	if((strcmp(buf, " ")==0)||(strcmp(buf, "\n")==0))
 		{
-			
+                    //    add_word(buf2);
+                    printf("%s\n", buf2);
+			buf2=NULL;     
 		}
-	        buf2=strcat(buf2,buf);
+	       buf2=strcat(buf2,buf);
         }
-	printf("%s\n", buf2);
+	//printf("%s\n", buf2);
+        print_words();
         free(buf); free(buf2);
         int closecode=close(openfile);
         if(closecode==-1)

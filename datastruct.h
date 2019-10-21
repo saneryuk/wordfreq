@@ -4,9 +4,12 @@
 
 struct word
 {
-	char str[100];
+	char *st;
 	int count;
-	struct word *next;
 };
 
-void add_word(char c[100]);
+void add_word(char *c);
+
+void print_words();
+
+
