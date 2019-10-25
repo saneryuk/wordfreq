@@ -8,7 +8,7 @@ struct word
 	int count;
 };
 
-void add_word(char *c);
+void add_word(char *ch);
 
 void print_words();
 
