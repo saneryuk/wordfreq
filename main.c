@@ -8,9 +8,9 @@
 
 int main(int argc, char *argv[])
 {
-        int openfile=open(argv[1], O_RDONLY);
-        char *buf=(char*)malloc(250000);
-        char *buf2=(char*)malloc(250000);
+    int openfile=open(argv[1], O_RDONLY);
+    char *buf=(char*)malloc(250000);
+    char *buf2=(char*)malloc(250000);
 	int wordcount=0;
        
 	 if(openfile==-1)
@@ -21,12 +21,17 @@ int main(int argc, char *argv[])
 //	printf("%s\n", buf2);
      
 	char *wrd=(char *)malloc(100);
+	int ind=0; int temp=0;
 	for(int i=0;i<strlen(buf2);i++)
 	{
 //		printf("%c", buf2[i]);
-		strcpy(buf2[i], wrd);
-		if(strcmp(buf2[i], " ")== 0||strcmp(buf2[i], "\n")==0)
-  		{ 	printf("Test %s",wrd);   
+		wrd[ind]=buf2[i];
+		ind++;
+		if(buf2[i]== ' '||buf2[i] == '\n'||buf2[i]=='\0')
+  		{ 
+			//if word exists, increment counter, else add
+			ind=0;
+			printf("%i. %s\n",temp++,wrd);   
 			add_word(wrd);
 			wordcount++;
 			wrd=calloc(1000, sizeof(char));
@@ -35,6 +40,7 @@ int main(int argc, char *argv[])
 
 //	print_words();
 	printf("\nWordcount: %i\n", wordcount);
+	print_words();
 	free(buf); free(buf2);   
         int closecode=close(openfile);
         if(closecode==-1)
