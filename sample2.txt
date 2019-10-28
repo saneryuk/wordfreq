@@ -1,0 +1,5 @@
+The truth is, fingerprints and other biometric authentication methods are flawed. You shouldn’t rely on them if you actually care about mobile security. PINs and passwords are much more secure — if less convenient — methods of authentication.
+
+There are several reasons why an old-fashioned password is preferable to fingerprint readers, facial scanners, or retina/iris scanners.
+
+For one, it’s easier to force someone to unlock their device with their fingerprint or face than it typically is to force them to reveal a password or PIN. It’s much easier to trick people into unlocking their device too — sometimes all it takes is to place the device in front of them while they’re sleeping (just ask Google Pixel 4 reviewers).
