@@ -13,4 +13,6 @@ void add_word(char *ch);
 
 void print_words();
 
+struct word *exists(char *c);
+
 
